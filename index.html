@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GERADOR DE SENHAS</title>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+
+   <script src="https://kit.fontawesome.com/23538a4f23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <main>
+      <h1 id="heading">GERADOR DE SENHAS</h1>
+
+      <div id="constraints">
+         <div class="constraints-split" id="password-and-copy-icon">
+            <h3 id="password">Sua senha...</h3>
+            <i class="fas fa-copy" id="copy" title="Copiar Senha" onclick="copiarsenhar()"></i>
+         </div>
+
+         <div class="constraints-split">
+            <label for="password-length-number">Qtd Caracteres:</label>
+            <div id="password-length-container">
+               <input type="range" id="password-length-range" value="4" min="4" max="20">
+               <pre> </pre>
+               <input type="number" id="password-length-number" value="4" min="4" max="20">
+            </div>
+         </div>
+
+         <div class="constraints-split">
+            <label for="uppercase">Letras Maiùscula</label>
+            <input type="checkbox" class="checkbox" id="uppercase" checked>
+         </div>
+
+         <div class="constraints-split">
+            <label for="lowercase">Letras Minúscula</label>
+            <input type="checkbox" class="checkbox" id="lowercase">
+         </div>
+
+         <div class="constraints-split">
+            <label for="numeros">Adicionar Números</label>
+            <input type="checkbox" class="checkbox" id="numeros">
+         </div>
+
+         <div class="constraints-split">
+            <label for="simbolos">Adicionar Símbolos</label>
+            <input type="checkbox" class="checkbox" id="simbolos">
+         </div>
+
+         <button id="button" onclick="gerandosenha()">CRIAR SENHA</button>
+      </div>
+   </main>
+
+
+   
+</body>
+
+</html>
